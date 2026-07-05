@@ -360,6 +360,22 @@ body {
   box-shadow: 0 0 6px rgba(212, 183, 120, 0.7);
 }
 
+.live-module {
+  margin-bottom: 18px;
+}
+
+.live-frame {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--inset);
+  padding: 6px;
+}
+
+.live-frame iframe {
+  border-radius: 13px;
+  display: block;
+}
+
 /* ---------- PANELS ---------- */
 
 .panel {
@@ -543,4 +559,5 @@ body {
   .artifact { padding-top: 50px; }
   .kpi-row { grid-template-columns: 1fr; gap: 10px; }
   .module-grid { grid-template-columns: 1fr; }
+  .live-frame iframe { min-height: 420px !important; }
 }
