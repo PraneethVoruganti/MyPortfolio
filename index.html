@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praneeth Voruganti — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <span class="nav-mark">PV</span>
+  <div class="nav-pills">
+    <a href="#bio" class="pill">Bio</a>
+    <a href="#value" class="pill">Value</a>
+    <a href="#artifacts" class="pill">Artifacts</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="ring-wrap">
+    <div class="ring-track"></div>
+    <svg class="ring-svg" viewBox="0 0 100 100">
+      <defs>
+        <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#D4B778"/>
+          <stop offset="100%" stop-color="#B9A8D9"/>
+        </linearGradient>
+      </defs>
+      <circle class="ring-progress" cx="50" cy="50" r="45" />
+    </svg>
+    <div class="ring-center">
+      <span class="ring-mono">PV</span>
+      <span class="ring-role">Senior&nbsp;Data&nbsp;Analyst</span>
+    </div>
+  </div>
+  <p class="hero-tagline">Reading signals. Building the case. Translating it for the people who have to act on it.</p>
+
+  <svg class="signal-strip" viewBox="0 0 300 40" preserveAspectRatio="none">
+    <polyline class="signal-line" points="0,28 20,26 40,30 60,14 80,24 100,8 120,22 140,18 160,4 180,20 200,12 220,26 240,10 260,18 280,6 300,16" />
+  </svg>
+</header>
+
+<main>
+
+  <section id="bio" class="reveal">
+    <div class="panel raised">
+      <h2 class="panel-title">Professional bio</h2>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <span class="kpi-label">Domain</span>
+          <span class="kpi-value">Retail analytics</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Specialty</span>
+          <span class="kpi-value">Anomaly detection</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-label">Currently</span>
+          <span class="kpi-value">IWU · AIML-500</span>
+        </div>
+      </div>
+
+      <p class="panel-body">
+        I'm a Senior Data Analyst working in large-scale retail, where I build anomaly detection dashboards,
+        inventory pipelines, and internal tools that turn ambiguous data signals into decisions non-technical
+        teams can act on. I'm currently pursuing graduate coursework in Data Analytics and Machine Learning
+        Fundamentals at Indiana Wesleyan University, sharpening the technical foundation behind work I already
+        do daily.
+      </p>
+      <p class="panel-body">
+        My approach borrows a simple standard: understand the problem before reaching for a solution, and never
+        mistake a technically correct answer for a useful one. This portfolio documents that work as it happens,
+        project by project.
+      </p>
+    </div>
+  </section>
+
+  <section id="value" class="reveal">
+    <div class="panel inset">
+      <span class="inset-eyebrow">Personal value proposition</span>
+      <p class="inset-text">
+        I translate ambiguous data signals into decisions people can act on, without pretending
+        more certainty than the data supports. Most analysts can build a dashboard. Fewer can
+        explain what it means to someone who has to make a call based on it, and fewer still
+        will say plainly when the honest answer is <em>not yet confirmed</em>. That is the gap I work in.
+      </p>
+    </div>
+  </section>
+
+  <section id="artifacts" class="reveal">
+    <h2 class="section-heading">Artifacts</h2>
+
+    <article class="panel raised artifact">
+      <span class="pill badge">Artifact 01</span>
+
+      <h3 class="artifact-title">Retail Anomaly Explainer</h3>
+      <p class="artifact-subtitle">An AI assistant for translating data signals</p>
+
+      <div class="tile">
+        <span class="tile-label">Introduction</span>
+        <p>Built as part of a graduate AI/ML lab exercise, this project applies Design Thinking to a
+        real problem I face at work: translating anomaly detection output into language a non-technical
+        stakeholder can act on.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Description</span>
+        <p>A conversational AI agent that takes a plain-language description or a short data snippet of
+        a business anomaly, asks clarifying questions when the input is vague, and returns a ranked,
+        jargon-free explanation of likely causes along with what to verify next.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Objective</span>
+        <p>To demonstrate that an AI tool can be constrained to communicate the way a careful analyst
+        would: honest about uncertainty, specific about what would confirm a theory, and free of
+        statistical jargon when speaking to a business audience.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Process</span>
+        <p>Followed the Design Thinking cycle end to end. Empathy and Define phases produced a 10-point
+        plan covering the bot's objective, scope, and hard boundaries. Ideate and Prototype phases turned
+        that plan into a system prompt built in Chatbase. The Test phase went beyond the five planned
+        scenarios: after all five passed cleanly, I added a sixth adversarial test that directly pressured
+        the bot to abandon its core rule, and separately caught a real implementation gap where a planned
+        disclaimer silently failed to appear, fixing it by moving the instruction into the system prompt itself.</p>
+      </div>
+
+      <div class="module-grid">
+        <div class="module">
+          <span class="module-header"><span class="dot"></span>Test results</span>
+          <span class="module-big">6/6</span>
+          <span class="module-caption">Test scenarios passed</span>
+          <div class="dot-row">
+            <span class="dot-lit"></span><span class="dot-lit"></span><span class="dot-lit"></span>
+            <span class="dot-lit"></span><span class="dot-lit"></span><span class="dot-lit"></span>
+          </div>
+        </div>
+
+        <div class="module">
+          <span class="module-header"><span class="dot"></span>System rules</span>
+          <div class="toggle-row">
+            <span class="toggle-label">No confirmed causes</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">No statistical jargon</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">No fabricated claims</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Tools and technologies used</span>
+        <p>Chatbase.co (GPT-5.4 Mini), prompt engineering, adversarial test design.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Value proposition</span>
+        <p>This is the exact translation work I already do daily in retail analytics, demonstrated as a
+        reusable, testable tool rather than a one-off explanation.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Unique value</span>
+        <p>Most people stop testing once a bot passes its planned scenarios. I treated a clean first pass
+        as a signal my tests weren't hard enough, then designed a harder one specifically to try to break
+        the rule that mattered most. It held. That instinct, to distrust an easy pass, is the same instinct
+        that catches a false anomaly signal before it reaches a stakeholder.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Relevance</span>
+        <p>Directly relevant to AI/ML leadership and change management: the hardest part of deploying an
+        AI tool in a business setting is not the model, it is getting people to trust what it tells them.
+        This project is a small, testable example of building that trust in.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">References</span>
+        <p><a class="btn" href="https://www.chatbase.co/kXrRUMP-I1rtrAtusHswq/help" target="_blank" rel="noopener">Open the live agent</a></p>
+        <p class="disclosure">Claude (Anthropic, 2026) was used to assist with planning, testing strategy, and documentation structure for this project.</p>
+      </div>
+
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="pill">Praneeth Voruganti · Portfolio, 2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
