@@ -437,7 +437,39 @@ body {
   margin: 0 0 40px;
 }
 
-.artifact { position: relative; padding-top: 60px; }
+.artifact-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto 34px;
+  flex-wrap: wrap;
+}
+
+.artifact-tab {
+  font-family: var(--font-label);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg);
+  border: none;
+  cursor: pointer;
+  padding: 12px 26px;
+  border-radius: 999px;
+  box-shadow: var(--raised-sm);
+  transition: box-shadow 0.25s ease, color 0.25s ease, transform 0.15s ease;
+}
+
+.artifact-tab:hover { color: var(--gold); }
+
+.artifact-tab.active {
+  color: var(--gold);
+  box-shadow: var(--inset-sm);
+}
+
+.artifact-tab:active { transform: scale(0.97); }
+
+.artifact { position: relative; padding-top: 40px; }
 
 .badge {
   position: absolute;

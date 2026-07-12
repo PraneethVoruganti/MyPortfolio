@@ -97,8 +97,12 @@
   <section id="artifacts" class="reveal">
     <h2 class="section-heading">Artifacts</h2>
 
-    <article class="panel raised artifact">
-      <span class="pill badge">Artifact 01</span>
+    <div class="artifact-tabs">
+      <button class="artifact-tab active" data-tab="1" type="button">Artifact 01</button>
+      <button class="artifact-tab" data-tab="2" type="button">Artifact 02</button>
+    </div>
+
+    <article class="panel raised artifact" data-panel="1">
 
       <h3 class="artifact-title">Retail Anomaly Explainer</h3>
       <p class="artifact-subtitle">An AI assistant for translating data signals</p>
@@ -209,8 +213,7 @@
 
     </article>
 
-    <article class="panel raised artifact">
-      <span class="pill badge">Artifact 02</span>
+    <article class="panel raised artifact" data-panel="2" hidden>
 
       <h3 class="artifact-title">ML vs. Deep Learning: Suitability Analysis</h3>
       <p class="artifact-subtitle">A technical writing artifact on choosing the right model class</p>

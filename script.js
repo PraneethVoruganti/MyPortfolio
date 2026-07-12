@@ -17,3 +17,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   reveals.forEach(function (el) { observer.observe(el); });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var tabs = document.querySelectorAll('.artifact-tab');
+  var panels = document.querySelectorAll('[data-panel]');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var target = tab.getAttribute('data-tab');
+
+      tabs.forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+
+      panels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute('data-panel') !== target;
+      });
+    });
+  });
+});
