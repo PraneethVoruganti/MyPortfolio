@@ -209,6 +209,114 @@
 
     </article>
 
+    <article class="panel raised artifact">
+      <span class="pill badge">Artifact 02</span>
+
+      <h3 class="artifact-title">ML vs. Deep Learning: Suitability Analysis</h3>
+      <p class="artifact-subtitle">A technical writing artifact on choosing the right model class</p>
+
+      <div class="tile">
+        <span class="tile-label">Introduction</span>
+        <p>Written for the graduate AI/ML Fundamentals course, this piece treats "ML or DL?" as an engineering
+        decision rather than a matter of which sounds more advanced. It works through two real-world systems
+        that sit on opposite ends of that decision and explains, with evidence, why each landed where it did.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Description</span>
+        <p>A researched comparative analysis examining real-time bot detection at checkout during limited
+        collectible releases (a classic ML fit) against autonomous task learning in a consumer humanoid robot
+        (a deep learning fit), each grounded in cited real-world implementations rather than textbook toy examples.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Objective</span>
+        <p>To demonstrate the ability to reason about model selection from first principles: identifying
+        whether a problem's decisive signals are already condensed, human-nameable features under a hard
+        latency constraint (favoring classic ML), or whether the problem requires learning open-ended
+        representations from raw, high-dimensional input (favoring deep learning) — and to state where that
+        boundary gets more nuanced than a simple rule.</p>
+      </div>
+
+      <div class="module-grid">
+        <div class="module">
+          <span class="module-header"><span class="dot"></span>Case 1 · Classic ML</span>
+          <span class="module-caption" style="margin-top:0; font-family: var(--font-display); font-size: 15px; color: var(--text-primary);">Bot detection at checkout</span>
+          <div class="toggle-row">
+            <span class="toggle-label">Human-nameable features</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Hard real-time latency limit</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Needs raw representation learning</span>
+            <span class="toggle"><span class="toggle-knob"></span></span>
+          </div>
+        </div>
+
+        <div class="module">
+          <span class="module-header"><span class="dot"></span>Case 2 · Deep Learning</span>
+          <span class="module-caption" style="margin-top:0; font-family: var(--font-display); font-size: 15px; color: var(--text-primary);">Humanoid robot task learning</span>
+          <div class="toggle-row">
+            <span class="toggle-label">Continuous, high-dim control</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Generalizes to unseen objects</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Finite feature set possible</span>
+            <span class="toggle"><span class="toggle-knob"></span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Process</span>
+        <p>Researched current, vendor-documented bot-management practices and a 2026 humanoid robotics deployment,
+        cross-checking claims against a primary-source patent filing where available. Built the analysis around
+        a single decision rule, tested it against both cases, then deliberately surfaced where the rule
+        weakens, e.g. deep sequence models are used elsewhere in the same bot-detection pipeline, so the
+        conclusion isn't overstated as absolute.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Tools and technologies used</span>
+        <p>Technical research and source verification, comparative/structured technical writing, APA citation.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Value proposition</span>
+        <p>This is the reasoning step that has to happen before any dashboard or model gets built: deciding
+        whether a problem even calls for deep learning, or whether a simpler, cheaper, faster model already
+        solves it. Recommending the heavier tool by default is a common and expensive mistake.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Unique value</span>
+        <p>Rather than stopping at "ML for structured data, DL for unstructured data," the analysis names the
+        actual mechanism, whether decisive signals are already condensed and nameable versus requiring learned
+        representations, and then stress-tests that mechanism by pointing to where it doesn't fully hold.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Relevance</span>
+        <p>Directly relevant to applied ML decision-making: before choosing an architecture, a practitioner has
+        to justify the choice against latency, cost, and problem structure. This artifact shows that reasoning
+        done explicitly rather than assumed.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">References</span>
+        <p><a class="btn" href="assets/Voruganti_Praneeth_Assignment_2.3.docx" download>Download full essay (.docx)</a></p>
+        <p class="disclosure">Claude (Anthropic, 2026) was used to research current real-world examples and verify factual claims for this piece.</p>
+      </div>
+
+    </article>
+
   </section>
 
 </main>
