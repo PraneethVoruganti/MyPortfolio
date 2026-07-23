@@ -100,6 +100,7 @@
     <div class="artifact-tabs">
       <button class="artifact-tab active" data-tab="1" type="button">Artifact 01</button>
       <button class="artifact-tab" data-tab="2" type="button">Artifact 02</button>
+      <button class="artifact-tab" data-tab="3" type="button">Artifact 03</button>
     </div>
 
     <article class="panel raised artifact" data-panel="1">
@@ -316,6 +317,103 @@
         <span class="tile-label">References</span>
         <p><a class="btn" href="assets/Voruganti_Praneeth_Assignment_2.3.docx" download>Download full essay (.docx)</a></p>
         <p class="disclosure">Claude (Anthropic, 2026) was used to research current real-world examples and verify factual claims for this piece.</p>
+      </div>
+
+    </article>
+
+    <article class="panel raised artifact" data-panel="3" hidden>
+
+      <h3 class="artifact-title">Communicating for Learning: Explaining Neural Networks Simply</h3>
+      <p class="artifact-subtitle">A case study in chunking, progressive disclosure, and storytelling for technical explanation</p>
+
+      <div class="tile">
+        <span class="tile-label">Introduction</span>
+        <p>Written for the graduate AI/ML Fundamentals course, this piece treats "explain it simply" as a skill to
+        be tested against a real failure case rather than assumed. It starts from a bad explanation on purpose,
+        diagnoses why it fails, and rebuilds it using specific communication-for-learning techniques.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Description</span>
+        <p>A worked comparison of two AI-generated explanations of neural networks: an unconstrained, jargon-heavy
+        first attempt, and a deliberately staged three-part explanation built around chunking, progressive
+        disclosure, and a single sustained analogy (recognizing a friend's knock at the door).</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Objective</span>
+        <p>To demonstrate the ability to apply specific communication-for-learning strategies to a technical
+        AI/ML concept, and to show the reasoning behind each strategy rather than just the finished explanation.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Process</span>
+        <p>Prompted Claude with no constraints first to produce a baseline, technically correct but pedagogically
+        unusable explanation of neural networks. Diagnosed exactly which lesson principles it violated, then
+        rewrote the prompt to explicitly require chunking, progressive disclosure, and one throughline analogy.
+        Compared the two outputs directly and named which technique did which work.</p>
+      </div>
+
+      <div class="module-grid">
+        <div class="module">
+          <span class="module-header"><span class="dot"></span>Techniques applied</span>
+          <div class="toggle-row">
+            <span class="toggle-label">Chunking (3 stages)</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Progressive disclosure</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Single sustained analogy</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+        </div>
+
+        <div class="module">
+          <span class="module-header"><span class="dot"></span>Before / after</span>
+          <span class="module-caption" style="margin-top:0; font-family: var(--font-display); font-size: 15px; color: var(--text-primary);">Jargon-first vs. story-first explanation</span>
+          <div class="toggle-row">
+            <span class="toggle-label">Zero jargon in stage one</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+          <div class="toggle-row">
+            <span class="toggle-label">Terms earned before introduced</span>
+            <span class="toggle on"><span class="toggle-knob"></span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Tools and technologies used</span>
+        <p>Claude (Anthropic), iterative prompt engineering, applied instructional-design principles (chunking,
+        progressive disclosure, analogy-based storytelling).</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Value proposition</span>
+        <p>Explaining ML concepts well to a non-technical audience is a recurring leadership task, not a one-off
+        writing exercise. This artifact shows a repeatable method for doing it, not just one good explanation.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Unique value</span>
+        <p>Rather than presenting only the polished final explanation, this piece keeps the failed first attempt
+        visible and names exactly why it failed. That diagnostic step, not just the fix, is what makes the
+        technique reusable on a different concept next time.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">Relevance</span>
+        <p>Directly relevant to AI/ML leadership and change management: translating technical concepts for
+        stakeholders who don't share the vocabulary is a prerequisite for getting buy-in on any AI initiative.</p>
+      </div>
+
+      <div class="tile">
+        <span class="tile-label">References</span>
+        <p><a class="btn" href="assets/Voruganti_Praneeth_3.4_Communicating_for_Learning.txt" download>Download full write-up (.txt)</a></p>
+        <p class="disclosure">Claude (Anthropic, 2026) was used to generate both the initial unrefined explanation and the revised three-stage explanation, based on prompts written and iterated on to apply the communication-for-learning strategies from this week's lesson.</p>
       </div>
 
     </article>
