@@ -1,0 +1,35 @@
+Navigating Human Bias: A Retail Analytics Leadership Value Statement
+
+Personal Value Statement
+
+In retail data analytics, bias doesn't usually show up as a dramatic failure. It shows up quietly, in which customer complaints get flagged as noise versus signal, in which anomalies get investigated versus dismissed as normal variation, and in whose feedback shapes what "normal" even means in the first place. I believe that fair analytics starts with questioning the assumptions baked into historical data before trusting what a model tells me. My core value is to build and lead analytics work that treats every customer segment's data as equally worth investigating, not just the segments that are loudest or most represented in the training history.
+
+Strategies to Fulfill This:
+
+1. Interrogate the Data Before Trusting the Model
+
+Historical Baseline Audits: Before deploying an anomaly detection model, review whether the "normal" baseline it learned from actually reflects all customer segments, or just the ones with the most historical transaction volume. A segment with less data isn't necessarily a segment with fewer real problems, it may just be underrepresented in what the model was shown.
+
+Question Convenient Silence: If a model reports low anomaly rates for a group, treat that as a hypothesis to test, not a finding to celebrate. Absence of flagged issues can mean absence of problems, or it can mean the model wasn't built to notice that group's problems.
+
+2. Build Cross-Functional Review Into the Analytics Pipeline
+
+Bring in Non-Technical Reviewers: Customer service and store operations staff often notice patterns an analytics model misses, because they're closer to the actual customer experience. I build their observations into model validation, not just their tickets into training data.
+
+Diverse Eyes on Labeling: When human labeling feeds into a model (flagging what counts as a legitimate complaint versus spam, for example), rotate who labels and periodically compare labeling patterns across reviewers to catch individual bias before it compounds into the model.
+
+3. Make Model Behavior Explainable to the People Affected by It
+
+Plain-Language Model Summaries: When an LLM-based tool makes a recommendation or flags something for a customer-facing team, the team should be able to see why in language that doesn't require a data science background. Opacity makes bias harder to catch, because no one downstream can push back on what they don't understand.
+
+Open Channels for Override: Give frontline teams a documented way to flag when a model's output doesn't match what they're seeing in practice, and treat repeated overrides as a signal to re-audit the model, not a nuisance to route around.
+
+4. Hold Myself Accountable First
+
+Self-Audit Before Shipping: Before any model goes live, I ask what assumption I made about "typical" customer behavior when building it, and whose behavior that assumption might be quietly excluding.
+
+Document the Trade-offs: Every model makes trade-offs about what to prioritize. I write those down explicitly rather than letting them stay implicit, so they can be reviewed and challenged later instead of discovered after something goes wrong.
+
+Bias in AI doesn't start with the algorithm. It starts with what data got collected, who labeled it, and who decided what "normal" looks like. As a leader, my job is to keep asking those questions even when the model's output looks clean.
+
+AI Disclosure: Claude (Anthropic, 2026) was used to help structure this value statement and refine the strategies into retail-specific language, based on my own professional context and experience in retail data analytics.
